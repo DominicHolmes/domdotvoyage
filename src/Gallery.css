@@ -1,0 +1,17 @@
+.Gallery {
+	text-align: center;
+}
+
+.Gallery-header {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.Gallery-content {
+	background-color: blue;
+	width: 300px;
+	height: 300px;
+}
