@@ -1,0 +1,82 @@
+.GalleryItem {
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+}
+
+.GalleryItem-header {
+	display: flex;
+	height: 20vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	background-color: #DDDDDD;
+}
+
+.GalleryItem-content {
+	display: flex;
+	height: 60vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background-color: #7FDBFF;
+}
+
+.GalleryItem-marginPadding {
+	width: 15vw;
+	height: 60vw;
+	background-color: white;
+}
+
+.GalleryItem-textContainer {
+	width: 25vw;
+	height: 60vw;
+	background-color: white;
+}
+
+.GalleryItem-productRole {
+	margin: 0;
+	padding-top: 30vh;
+	color: #aaa;
+	text-align: left;
+	font-size: 1vw;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+	font-weight: 600;
+}
+
+.GalleryItem-productTitle {
+	margin: 0;
+	padding-top: 4px;
+	text-align: left;
+	font-size: 3vw;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+	font-weight: 200;
+}
+
+.GalleryItem-productDescription {
+	margin: 0;
+	padding-top: 8px;
+	text-align: left;
+	font-size: 1vw;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+	font-weight: 100;
+}
+
+.GalleryItem-imageContainer {
+	width: 60vw;
+	height: 60vw;
+	background-color: white;
+}
+
+.GalleryItem-footer {
+	display: flex;
+	height: 20vh;
+	width: 100vw;
+	justify-content: center;
+	align-items: center;
+	background-color: #AAAAAA;
+}

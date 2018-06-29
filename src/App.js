@@ -2,14 +2,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './Landing.css';
-import Gallery from './Gallery';
+import './GalleryItem.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Landing/>
-        <Gallery/>
+        <GalleryItemLeft/>
+        <GalleryItemRight/>
+        <GalleryItemLeft/>
+        <GalleryItemRight/>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
@@ -27,9 +30,49 @@ class Landing extends Component {
     return (
       <div className="Landing-header">
         <div className="Landing-content">
-          <h2>Son of a bitch</h2>
-          <h3>I am sick of these dolphins</h3>
+          <h2>Dominic Holmes</h2>
+          <h3>iOS Dev</h3>
         </div>
+      </div>
+    );
+  }
+}
+
+class GalleryItemLeft extends Component {
+  render() {
+    return (
+      <div className="GalleryItem">
+        <div className="GalleryItem-header"></div>
+        <div className="GalleryItem-content">
+          <div className="GalleryItem-marginPadding"></div>
+          <div className="GalleryItem-textContainer">
+            <p className="GalleryItem-productRole">iOS Lead</p>
+            <p className="GalleryItem-productTitle">Penn Mobile iOS</p>
+            <p className="GalleryItem-productDescription">Product Description. This should be a bit longer, and contain a few sentences. An effective description will sum up the product well in a succint (but interesting!) manner.</p>
+          </div>
+          <div className="GalleryItem-imageContainer"></div>
+        </div>
+        <div className="GalleryItem-footer"></div>
+      </div>
+    );
+  }
+}
+
+class GalleryItemRight extends Component {
+  render() {
+    return (
+      <div className="GalleryItem">
+        <div className="GalleryItem-header"></div>
+        <div className="GalleryItem-content">
+          <div className="GalleryItem-imageContainer"></div>
+          <div className="GalleryItem-textContainer">
+            <p className="GalleryItem-productRole">iOS Lead</p>
+            <p className="GalleryItem-productTitle">Penn Mobile iOS</p>
+            <p className="GalleryItem-productDescription">Product Description. This should be a bit longer, and contain a few sentences. An effective description will sum up the product well in a succint (but interesting!) manner.</p>
+          </div>
+          <div className="GalleryItem-marginPadding"></div>
+        </div>
+        <div className="GalleryItem-footer"></div>
       </div>
     );
   }
